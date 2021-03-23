@@ -1,0 +1,21 @@
+<body style="text-align: center;">
+<a href="{% url 'home' %}">Go back and start again</a>
+
+<h1>Here We Are</h1>
+<h2>Number of words: {{ count }}</h2>
+<h2>Word Count:</h2><br>
+{% for word, counttotal in worddictionary %}
+<p>
+{{ word }}:
+{{ counttotal }}
+</p>
+{% endfor %}
+
+
+<h2>Your text: </h2>
+    <br>
+
+
+{{ fulltext }}
+    
+</body>
